@@ -94,13 +94,17 @@ function dtd() {
   var res = document.getElementById("result-content");
   return (res.style.display = "flex");
 }
-/*--------------------------------
-var atResult = document.getElementById("add-result");
-atResult.addEventListener("click", dt);
-function dt() {
-  var qw = document.getElementBiId("debet-res");
-  var eq = document.getElementBiId("credit-res");
-  var tnt = qw - eq;
-  document.getElementBiId("balance-count-resuly").innerHTML = tnt;
+addResult.addEventListener("click", createBalanse); /*nelza obiedenit?*/
+function createBalanse() {
+  let debetTool = parseFloat(document.getElementById("debet-res").innerHTML);
+  let credittTool = parseFloat(document.getElementById("credit-res").innerHTML);
+  let results = debetTool - credittTool;
+  document.getElementById("balance-count-resuly").innerHTML = results;
+  if (results > 0) {
+    document.getElementById("balance-count-resuly").style.color = "green";
+    document.getElementById("recordBalance").style.color = "green";
+  } else {
+    document.getElementById("balance-count-resuly").style.color = "red";
+    document.getElementById("recordBalance").style.color = "red";
+  }
 }
-*/
