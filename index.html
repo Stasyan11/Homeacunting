@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home helper</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      Financial assistant
+    </header>
+
+    <main class="container">
+      <section class="container-section">
+        <div class="debet-content">
+          <div id="myList1">
+            <div>
+              <select>
+                <option>salary</option>
+                <option>helps</option>
+                <option>other</option>
+              </select>
+              <input class="info-debet" />
+            </div>
+          </div>
+          <div class="button-position">
+            <button id="button">Add input</button>
+          </div>
+        </div>
+
+        <div class="credit-content">
+          <div id="myList2">
+            <div>
+              <select>
+                <option>food</option>
+                <option>luxary-stuff</option>
+                <option>education</option>
+                <option>sport</option>
+                <option>hous</option>
+                <option>animals food</option>
+                <option>transpor</option>
+              </select>
+              <input class="info-credit" />
+            </div>
+          </div>
+          <div class="button-position">
+            <button id="button2">Add input</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-section section-result">
+        <div class="add-result-wrap">
+          <button id="add-result">Get result</button>
+        </div>
+        <div class="container">
+          <div id="result-content">
+            <div>
+              <p>debet</p>
+              <p id="debet-result">0</p>
+            </div>
+            <div>
+              <p>credet</p>
+              <p id="credet-result">0</p>
+            </div>
+            <div class="balanse-container">
+              <p>balance</p>
+              <p id="balance">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      Financial assistant, create by Stas
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  font-family: sans-serif;
+  border: 0;
+  margin: 0;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  background-color: #f2faf0;
+  padding: 45px 0;
+}
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#result-content > div {
+  margin: 10px;
+}
+
+.add-result-wrap {
+  width: 100%;
+  margin: auto;
+}
+
+.debet-content {
+  width: 45%;
+}
+
+.credit-content {
+  width: 45%;
+}
+/*---------header*/
+.header-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #aafc97;
+  padding: 40px 0;
+  margin-bottom: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  color: #40543c;
+}
+
+/*-------------mainPart---------*/
+
+.info-debet {
+  background-color: #d1ffdb;
+  border: 1px solid #a0ada3;
+}
+.info-credit {
+  background-color: #ffdcd4;
+  border: 1px solid #a0ada3;
+}
+.button-position {
+  width: 30%;
+  margin: auto;
+  margin-top: 16px;
+}
+.button-position > button {
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid burlywood;
+  height: 30px;
+}
+.button-position > button:hover {
+  width: 100%;
+  background-color: limegreen;
+  border: 1px solid burlywood;
+}
+/*--------------result-------------*/
+
+.section-result {
+  margin-top: 80px;
+}
+.container-result {
+  width: 100%;
+  background-color: burlywood;
+}
+#add-result {
+  width: 30%;
+  background-color: whitesmoke;
+  border: 1px solid burlywood;
+  height: 60px;
+  margin-left: 37%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#add-result:hover {
+  width: 30%;
+  background-color: limegreen;
+  border: 1px solid burlywood;
+  height: 60px;
+  margin-left: 37%;
+}
+#result-content {
+  display: none;
+  width: 100%;
+}
+#result-content > div {
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid burlywood;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*-------------footer--------*/
+.footer {
+  padding: 20px 0;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #aafc97;
+  color: #40543c;
+}
