@@ -1,8 +1,7 @@
-let button = document.getElementById("add-debet-input");
-button.addEventListener("click", addDebetLine);
-
-let button2 = document.getElementById("add-credit-input");
-button2.addEventListener("click", addCreditLine);
+const addDebetInput = document.getElementById("add-debet-input");
+addDebetInput.addEventListener("click", addDebetLine);
+const addCreditInput = document.getElementById("add-credit-input");
+addCreditInput.addEventListener("click", addCreditLine);
 
 function addDebetLine() {
   const itm = document.querySelector("#Debet-input-area > div");
@@ -21,31 +20,31 @@ addResult.addEventListener("click", dispalyBalance);
 
 function calcuteBalance() {
   // THIS CODE SUMS UP DEBET-MASIV
-  let masiDebet = [];
-  let addInMasiDebet;
-  let inpDebet = document.getElementsByClassName("info-debet");
+  let arrDebet = [];
+  let addInArrDebet;
+  const inpDebet = document.getElementsByClassName("info-debet");
   for (let i = 0; i < inpDebet.length; i++) {
-    addInMasiDebet = Number(inpDebet[i].value);
-    masiDebet.push(addInMasiDebet);
+    addInArrDebet = Number(inpDebet[i].value);
+    arrDebet.push(addInArrDebet);
   }
   //THIS CODE SUMS UP CREDIT-MASIV
-  let masiCredit = [];
-  let addInMasiCredit;
-  let inpCredit = document.getElementsByClassName("info-credit");
+  let arrCredit = [];
+  let addInArrCredit;
+  const inpCredit = document.getElementsByClassName("info-credit");
   for (let i = 0; i < inpCredit.length; i++) {
-    addInMasiCredit = Number(inpCredit[i].value);
-    masiCredit.push(addInMasiCredit);
+    addInArrCredit = Number(inpCredit[i].value);
+    arrCredit.push(addInArrCredit);
   }
   return {
-    masiDebet: masiDebet,
-    masiCredit: masiCredit,
+    arrDebet: arrDebet,
+    arrCredit: arrCredit,
   };
 }
 
 function dispalyBalance() {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  let resultDebet = calcuteBalance().masiDebet.reduce(reducer);
-  let resultCredit = calcuteBalance().masiCredit.reduce(reducer);
+  const resultDebet = calcuteBalance().arrDebet.reduce(reducer);
+  const resultCredit = calcuteBalance().arrCredit.reduce(reducer);
   document.getElementById("debet-result").innerHTML = resultDebet;
   document.getElementById("debet-result").style.color = "green";
   document.getElementById("credet-result").innerHTML = resultCredit;
