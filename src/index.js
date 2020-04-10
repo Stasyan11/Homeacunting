@@ -1,19 +1,60 @@
-const addDebetInput = document.getElementById("add-debet-input");
-addDebetInput.addEventListener("click", addDebetLine);
-const addCreditInput = document.getElementById("add-credit-input");
-addCreditInput.addEventListener("click", addCreditLine);
+//this code delates inputs
+function delite(fun) {
+  fun.addEventListener("click", (e) => {
+    fun.parentElement.remove();
+  });
+}
+//get debet input
+let buttonDebet = document.querySelector("#add-debet-input");
+buttonDebet.addEventListener("click", addDebetLine);
+
+let div = document.querySelector("#Debet-input-area");
 
 function addDebetLine() {
-  const itm = document.querySelector("#Debet-input-area > div");
-  const cln = itm.cloneNode(true);
-  document.getElementById("Debet-input-area").appendChild(cln);
+  const input = document.createElement("input");
+  const button = document.createElement("button");
+  const content = document.createElement("div");
+
+  button.classList.add("button-content");
+
+  div.appendChild(content);
+  button.textContent = "Delate";
+  input.classList.add("info-debet");
+
+  content.appendChild(input);
+  content.appendChild(button);
+  content.insertAdjacentHTML(
+    "afterbegin",
+    "<select><option>salary</option><option>helps</option><option>other</option></select> "
+  );
+  delite(button);
 }
 
+//get credit input
+let buttonCredit = document.querySelector("#add-credit-input");
+buttonCredit.addEventListener("click", addCreditLine);
+
 function addCreditLine() {
-  const itm = document.querySelector("#Credit-input-area > div");
-  const cln = itm.cloneNode(true);
-  document.getElementById("Credit-input-area").appendChild(cln);
+  let div = document.querySelector("#Credit-input-area");
+  const input = document.createElement("input");
+  const button = document.createElement("button");
+  const content = document.createElement("div");
+
+  button.classList.add("button-content");
+
+  div.appendChild(content);
+  button.textContent = "Delate";
+  input.classList.add("info-credit");
+
+  content.appendChild(input);
+  content.appendChild(button);
+  content.insertAdjacentHTML(
+    "afterbegin",
+    "<select><option>food</option><option>luxary-stuff</option><option>education</option><option>sport</option><option>hous</option><option>animals food</option><option>transpor</option></select> "
+  );
+  delite(button);
 }
+
 let addResult = document.getElementById("add-result");
 addResult.addEventListener("click", calcuteBalance);
 addResult.addEventListener("click", dispalyBalance);
