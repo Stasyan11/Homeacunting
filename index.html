@@ -1,276 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Home helper</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/main.css" />
-
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body>
-    <div class="header">
-      <div><h1>home accounting</h1></div>
-    </div>
 
-    <main>
-      <section class="hero">
-        <!---->
-        <div class="hero-title">
-          <div><h2 class="debet-title">debet</h2></div>
-          <div><h2 class="credit-title">credit</h2></div>
-        </div>
-        <!---->
-        <div class="information-section ">
-          <div class="debet-section">
-            <!---->
-            <form>
-              <div class="debet-information">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="debet-information " id="two">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="debet-information " id="three">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <!---->
-            <form>
-              <div class="debet-information " id="four">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="debet-information " id="five">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="debet-information " id="six">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="debet-information " id="seven">
-                <select>
-                  <option>salary</option>
-                  <option>helps</option>
-                  <option>other</option>
-                </select>
-                <input class="coments" />
-                <input class="field" />
-              </div>
-            </form>
-            <!---->
-            <button id="button">+add else</button>
-            <!---->
+  <body>
+    <header class="header-container">
+      Financial assistant
+    </header>
+
+    <main class="container">
+      <section class="container-section">
+        <div class="debet-content">
+          <div id="Debet-input-area">
+            <div>
+              <select>
+                <option>salary</option>
+                <option>helps</option>
+                <option>other</option>
+              </select>
+              <input class="info-debet" />
+            </div>
           </div>
-          <div class="credit-section">
-            <!---->
-            <form>
-              <div class="credit-information">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="two-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="three-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="four-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="five-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="six-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="seven-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <form>
-              <div class="credit-information" id="eight-credit">
-                <select>
-                  <option>food</option>
-                  <option>luxary-stuff</option>
-                  <option>education</option>
-                  <option>sport</option>
-                  <option>hous</option>
-                  <option>animals food</option>
-                  <option>transpor</option>
-                </select>
-                <input class="coments" />
-                <input class="number" />
-              </div>
-            </form>
-            <!---->
-            <!---->
-            <button id="button-credit">+add else</button>
-            <!---->
+          <div class="button-position">
+            <button id="add-debet-input">Add input</button>
+          </div>
+        </div>
+
+        <div class="credit-content">
+          <div id="Credit-input-area">
+            <div>
+              <select>
+                <option>food</option>
+                <option>luxary-stuff</option>
+                <option>education</option>
+                <option>sport</option>
+                <option>hous</option>
+                <option>animals food</option>
+                <option>transpor</option>
+              </select>
+              <input class="info-credit" />
+            </div>
+          </div>
+          <div class="button-position">
+            <button id="add-credit-input">Add input</button>
           </div>
         </div>
       </section>
 
-      <section class="result">
-        <div id="result-content">
-          <!---->
-          <div class="debet-result">
-            <h2>Debet</h2>
-            <p id="debet-res">0</p>
-          </div>
-          <!---->
-          <div class="credit-result">
-            <h2>Credit</h2>
-            <p id="credit-res">0</p>
-          </div>
-          <!---->
-          <div class="balance">
-            <h2 id="recordBalance">balanse</h2>
-            <p id="balance-count-resuly">0</p>
-          </div>
-          <!---->
+      <section class="container-section section-result">
+        <div class="add-result-wrap">
+          <button id="add-result">Get result</button>
         </div>
-        <div class="button-container">
-          <button id="add-result">add result</button>
+        <div class="container">
+          <div id="result-content">
+            <div>
+              <p>debet</p>
+              <p id="debet-result">0</p>
+            </div>
+            <div>
+              <p>credet</p>
+              <p id="credet-result">0</p>
+            </div>
+            <div class="balanse-container">
+              <p>balance</p>
+              <p id="balance">0</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <script src="ttt.js"></script>
+    <footer class="footer">
+      Financial assistant, create by Stas
+    </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
