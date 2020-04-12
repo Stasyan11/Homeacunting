@@ -1,5 +1,5 @@
 //this code delates inputs
-function delite(fun) {
+function deliteInput(fun) {
   fun.addEventListener("click", (e) => {
     fun.parentElement.remove();
   });
@@ -18,7 +18,7 @@ function addDebetLine() {
   button.classList.add("button-content");
 
   div.appendChild(content);
-  button.textContent = "Delate";
+  button.textContent = "Delite";
   input.classList.add("info-debet");
 
   content.appendChild(input);
@@ -27,7 +27,7 @@ function addDebetLine() {
     "afterbegin",
     "<select><option>salary</option><option>helps</option><option>other</option></select> "
   );
-  delite(button);
+  deliteInput(button);
 }
 
 //get credit input
@@ -52,7 +52,7 @@ function addCreditLine() {
     "afterbegin",
     "<select><option>food</option><option>luxary-stuff</option><option>education</option><option>sport</option><option>hous</option><option>animals food</option><option>transpor</option></select> "
   );
-  delite(button);
+  deliteInput(button);
 }
 
 let addResult = document.getElementById("add-result");
