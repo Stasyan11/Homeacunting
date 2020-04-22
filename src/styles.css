@@ -20,11 +20,11 @@
 }
 
 .debet-content {
-  width: 45%;
+  width: 49%;
 }
 
 .credit-content {
-  width: 45%;
+  width: 50%;
 }
 /*---------header*/
 .header-container {
@@ -109,4 +109,8 @@
   text-align: center;
   background-color: #aafc97;
   color: #40543c;
+}
+
+.button-content:hover {
+  background-color: pink;
 }
