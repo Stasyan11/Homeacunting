@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home helper</title>
+    <title>Home</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-    <header class="header-container">
-      Financial assistant
+    <header class="header">
+      <div class="header-top">
+        <h2>Home accounting</h2>
+      </div>
     </header>
-
-    <main class="container">
-      <section class="container-section">
-        <div class="debit-content">
-          <div id="debit-input-area">
-            <div>
-              <select>
-                <option>salary</option>
-                <option>helps</option>
-                <option>other</option>
-              </select>
-              <input class="info-debit" />
-            </div>
+    <main>
+      <section class="section-inputs-form">
+        <div class="debit-inputs">
+          <div class="button-debit-wraper">
+            <button class="add-debit-category">Add new category</button>
           </div>
-          <div class="button-position">
-            <button id="add-debit-input">Add input</button>
+          <div class="button-debit-wraper">
+            <button class="add-debit-input">Add else</button>
           </div>
         </div>
-
-        <div class="credit-content">
-          <div id="Credit-input-area">
-            <div>
-              <select>
-                <option>food</option>
-                <option>luxary-stuff</option>
-                <option>education</option>
-                <option>sport</option>
-                <option>hous</option>
-                <option>animals food</option>
-                <option>transpor</option>
-              </select>
-              <input class="info-credit" />
-            </div>
+        <div class="credit-inputs">
+          <div class="button-debit-wraper">
+            <button class="add-credit-category">Add new category</button>
           </div>
-          <div class="button-position">
-            <button id="add-credit-input">Add input</button>
+          <div class="button-credit-wraper">
+            <button class="add-credit-input">Add else</button>
           </div>
         </div>
       </section>
-
-      <section class="container-section section-result">
-        <div class="add-result-wrap">
-          <button id="add-result">Get result</button>
+      <section class="section-results">
+        <div class="get-result-wraper">
+          <button class="get-result">get result</button>
         </div>
-        <div class="container">
-          <div id="result-content">
-            <div>
-              <p>debit</p>
-              <p id="debit-result">0</p>
-            </div>
-            <div>
-              <p>credit</p>
-              <p id="credit-result">0</p>
-            </div>
-            <div class="balanse-container">
-              <p>balance</p>
-              <p id="balance">0</p>
-            </div>
-          </div>
+        <div class="result-content"></div>
+      </section>
+      <section class="my-saves">
+        <div class="show-button-wraper">
+          <button class="show-button">Show</button>
         </div>
+        <div class="saves-container saves-container-interect"></div>
       </section>
     </main>
-    <footer class="footer">
-      Financial assistant, create by Stas
+    <footer>
+      <div class="footer-info">
+        created by Stas in 2020
+      </div>
     </footer>
     <script src="src/index.js"></script>
   </body>
